@@ -1,3 +1,6 @@
+#Project Description
+
+In this project the A star search algorithm is used to create a route planner that plots a path between two points on a real map data from the "Open Street Map Project"
 # Route Planning Project Starter Code
 
 This is the starter code for the Route Planning project. Instructions for each exercise can be found in the `instructions` directory, and unit tests for some exercises in the `test` directory.
