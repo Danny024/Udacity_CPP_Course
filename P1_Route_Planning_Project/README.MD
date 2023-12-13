@@ -24,10 +24,6 @@ cmake ..
 make
 ```
 ### Running
-The executables will be placed in the `bin` directory. From within `build`, you can run the project as follows:
-```
-../bin/<name-of-parent-directory> -f ../map.osm
-```
 
 ## Testing
 
