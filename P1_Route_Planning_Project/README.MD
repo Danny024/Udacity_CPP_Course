@@ -5,7 +5,7 @@ In this project the A star search algorithm is used to create a route planner th
 
 ## Cloning
 
-When cloning this project, be sure to use the `--recurse-submodules` flag. Using HTTPS:
+Using HTTPS:
 ```
 git clone https://github.com/Danny024/Udacity_CPP_Course/tree/main/P1_Route_Planning_Project
 ```
