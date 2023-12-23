@@ -29,5 +29,9 @@ int main (){
     cout <<Product<int>(5,5)<<endl;
     cout <<Max<double> (50.00, 200.00)<<endl;
 
+   // template deduction
+    assert (Max(430.00, 673.19)==673.19);
+    cout<<Max(430.00,673.19)<<endl;
+
     
 }
