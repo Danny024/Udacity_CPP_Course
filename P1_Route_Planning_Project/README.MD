@@ -4,7 +4,7 @@ In this project the A star search algorithm is used to create a route planner th
 
 ## You tube Video Demonstration
 
-[![A star Algorithm(https://img.youtube.com/vi/a_4WtfeeWKo/0.jpg)](https://www.youtube.com/watch?v=a_4WtfeeWKo)
+[![A star Algorithm](https://img.youtube.com/vi/a_4WtfeeWKo/0.jpg)](https://www.youtube.com/watch?v=a_4WtfeeWKo)
 
 ## Cloning
 
