@@ -2,7 +2,7 @@
 
 In this project the A star search algorithm is used to create a route planner that plots a path between two points on a real map data from the "Open Street Map Project"
 
-## You tube Video Demonstration
+## Youtube Video Demonstration
 
 [![A star Algorithm](https://img.youtube.com/vi/a_4WtfeeWKo/0.jpg)](https://www.youtube.com/watch?v=a_4WtfeeWKo)
 
