@@ -78,30 +78,30 @@ vector<int> LinuxParser::Pids() {
 
 // TODO: Read and return the system memory utilization
 float LinuxParser::MemoryUtilization() {
-  float Total_Memory {}, Free_Memory {};
+  long Total_Memory {}, Free_Memory {};
   ifstream file_path (LinuxParser::kProcDirectory + LinuxParser::kMeminfoFilename);
   
   if(file_path.is_open()){
     string mem_label, mem_value, unit, line;
     while (getline (file_path,line)){
       istringstream line_stream (line);
-
-      while (line_stream >> mem_label >> mem_value >> unit){
+        line_stream >> mem_label;
         if (mem_label=="MemTotal:"){
-          Total_Memory = stof (mem_value);
+          line_stream >> Total_Memory;
         }
 
-        else if (mem_value == "MemFree:"){
-          Free_Memory = stof (mem_value);
+        else if (mem_label == "MemFree:"){
+          line_stream >> Free_Memory;
         }
-
-      }
+      
     }
-
+     if (Total_Memory > 0){
+       return static_cast <float> (Total_Memory - Free_Memory) / Total_Memory;
+     }
   }
 
+  return 0.0f;
 
-  return (Total_Memory > 0.0)? ((Total_Memory - Free_Memory) / Total_Memory) : 0.0; 
   
   }
 
@@ -284,7 +284,7 @@ string LinuxParser::Ram(int pid) {
     while (getline(file_path, line)){
       istringstream line_stream (line);
       while (line_stream >> label >> size){
-        if (label == "Vmsize:"){
+        if (label == "VmSize:"){
           ram = to_string (stof(size)/ 1000.0);
           return ram;
 
