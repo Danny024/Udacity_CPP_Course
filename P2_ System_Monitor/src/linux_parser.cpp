@@ -345,7 +345,7 @@ string LinuxParser::User(int pid) {
 // TODO: Read and return the uptime of a process
 // REMOVE: [[maybe_unused]] once you define the function
 long LinuxParser::UpTime(int pid) {
-  string pid_string {to_string (pid)}, line, token;
+  string pid_string {to_string (pid)}, line, dummy;
   int index_start_time {21};
    long start_time;
    vector <string> stats;
@@ -354,12 +354,13 @@ long LinuxParser::UpTime(int pid) {
    if (file_path.is_open()){
      getline (file_path, line);
      istringstream line_stream (line);
-     while (line_stream >> token ){
-       stats.emplace_back (token);
+     for (int i = 0; i<index_start_time; ++i ){
+       line_stream >> dummy;
      }
+     line_stream >> start_time;
+     file_path.close();
    }
-   start_time = stol(stats[index_start_time]); /// sysconf (_SC_CLK_TCK);
-   return (LinuxParser::UpTime() - start_time);
+   return (LinuxParser::UpTime() - start_time)/sysconf (_SC_CLK_TCK);
 
   
   }
