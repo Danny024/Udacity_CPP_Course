@@ -28,6 +28,7 @@ void Animal::makeSound (Goat goat){
 
 int main (){
     Animal animal;
+    Dog dog;
     animal.makeSound(Goat());
     animal.makeSound (Cat());
     animal.makeSound (Dog());
