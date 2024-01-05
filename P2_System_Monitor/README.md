@@ -3,8 +3,9 @@
 Starter code for System Monitor Project in the Object Oriented Programming Course of the [Udacity C++ Nanodegree Program](https://www.udacity.com/course/c-plus-plus-nanodegree--nd213). 
 
 Follow along with the classroom lesson to complete the project!
+# Youtube Video Link
+[![Unmanned Aerial Vehicle](https://img.youtube.com/vi/Ty7nA3LDxkw/0.jpg)](https://www.youtube.com/watch?v=Ty7nA3LDxkw)
 
-https://youtu.be/Ty7nA3LDxkw
 ## Udacity Linux Workspace
 [Udacity](https://www.udacity.com/) provides a browser-based Linux [Workspace](https://engineering.udacity.com/creating-a-gpu-enhanced-virtual-desktop-for-udacity-497bdd91a505) for students. 
 
