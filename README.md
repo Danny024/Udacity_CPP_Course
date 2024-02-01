@@ -12,4 +12,4 @@
 - P4: [P4_Traffic_Simulation](P4_Traffic_Simulation)
 - P5: [Capstone_Snake_Game](Capstone_Snake_Game)
 
-  ![udacity_certificate]()
+  ![udacity_certificate](https://github.com/Danny024/Udacity_CPP_Course/blob/main/C%2B%2B%20Udacity%20Certificate.jpg)
